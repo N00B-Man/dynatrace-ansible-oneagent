@@ -1,0 +1,9 @@
+[iamservers]
+target1 ansible_host=3.16.125.196 ansible_connection=ssh patch_batch="batch1" friendly_name="GDSHost"
+[iamservers:vars]
+host_group=eDirectoryServer
+
+[amserver]
+target88 ansible_host=3.14.27.163 ansible_connection=ssh patch_batch="batch2" friendly_name="NAMHost"
+[amserver:vars]
+host_group=Access-Manager-Server
